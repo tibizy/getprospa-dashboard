@@ -13,8 +13,7 @@ module.exports = {
                     '@primary-color': '#FA4A84',
                     '@btn-height-base': '50px',
                     '@input-height-base': '44px',
-                    '@input-bg': '#F4F8FB',
-                    '@@input-hover-border-color': ''
+                    '@input-bg': '#F4F8FB'
                  },
                 javascriptEnabled: true,
               },
