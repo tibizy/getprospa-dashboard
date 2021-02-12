@@ -1,0 +1,54 @@
+@import '../../assets/styles/space.less';
+
+.auth-container {
+
+  aside {
+    background-color: #7E51FF;
+    @media (min-width: 400px) {
+      padding: @base-content-padding;
+    }
+
+    .divider-steps .ant-divider{
+      border-top: 2px solid #FFFFFF;
+      color: #FFFFFF;
+      opacity: 0.4;
+       
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  main {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+
+    .auth-form {
+      margin-top: @base-content-padding;
+
+      input {
+        border: 0;
+        &:focus{
+          border-bottom: 3px solid;
+          border-image-source: linear-gradient(to right, #00D2FF, #7E51FF, #FA4A84);
+          border-image-slice: 1;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .auth-container-card {
+    & > .ant-card-body {
+      // padding: 0;
+      min-width: 375px;
+      max-width: 375px;
+
+
+      @media (min-width: 400px) {
+        padding: 0;
+      }
+    }
+  }
+
+}
