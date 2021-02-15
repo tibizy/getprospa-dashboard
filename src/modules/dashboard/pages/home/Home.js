@@ -31,7 +31,8 @@ function DashboardHome() {
           <Row justify="space-between" align="middle" gutter={[24, 24]}>
             <Col>
               <Typography.Title level={3} className="page-title no-margin">Welcome back, Katty</Typography.Title>
-              <Typography.Text level={3} className="page-sub-title">Here's what has been happening in the last <a>7 days</a></Typography.Text>
+              <Typography.Text level={3} className="page-sub-title">Here's what has been happening in the last &nbsp;
+              <Typography.Text underline><a>7 days</a></Typography.Text></Typography.Text>
             </Col>
             <Col>
               <Button size="large" type="primary">Add a sub account</Button>
