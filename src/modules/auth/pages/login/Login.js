@@ -1,12 +1,14 @@
 import React from "react";
 import {withRouter} from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 import { Layout, Row, Typography, Card, Form, Input, Button } from "antd";
 import './Login.less';
 
 class Login extends React.Component {
 
-  onFinish(data) {
+  onFinish = (data) =>  {
+    console.log(this.props.match)
     this.props.history.push("dashboard");
   }
 
@@ -14,11 +16,13 @@ class Login extends React.Component {
     return (
       <Layout>
         <Layout.Content className="container-padding auth-login">
-          <div className="text-right"> Don't have an account <Link to="/create-account"> Sign Up</Link></div>
+          <div className="text-right">
+            <Typography.Title level={5}> Don't have an account <Link to="/create-account"> Sign Up</Link> </Typography.Title>
+          </div>
           <Row justify="space-around" align="middle">
             <Card className="auth-container-card container-padding-y" bordered={false}>
               <Typography.Title level={3}>Welcome back to Prospa</Typography.Title>
-              <Typography.Text>An account, with powerful, personalised tools all in one place</Typography.Text>
+              <Typography.Text type="secondary">An account, with powerful, personalised tools all in one place</Typography.Text>
               <Form
                 className="auth-form"
                 onFinish={(data) => this.onFinish(data)}

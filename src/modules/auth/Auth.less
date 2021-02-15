@@ -4,8 +4,16 @@
 
   aside {
     background-color: #7E51FF;
+    .ant-layout-sider-children {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
     @media (min-width: 400px) {
       padding: @base-content-padding;
+    }
+    @media (max-width: 400px) {
+      min-height: 900px;
     }
 
     .divider-steps .ant-divider{
@@ -17,6 +25,10 @@
         opacity: 1;
       }
     }
+
+    .ant-typography {
+      color: #FFFFFF;
+    }
   }
 
   main {
@@ -26,8 +38,9 @@
     .auth-form {
       margin-top: @base-content-padding;
 
-      input {
+      input, .ant-select-selector, button {
         border: 0;
+        background-color: #F4F8FB;
         &:focus{
           border-bottom: 3px solid;
           border-image-source: linear-gradient(to right, #00D2FF, #7E51FF, #FA4A84);

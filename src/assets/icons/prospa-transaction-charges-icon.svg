@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DASHBOARD-LANDING" transform="translate(-366.000000, -586.000000)" fill="#8397AB" fill-rule="nonzero">
+            <g id="Group-43" transform="translate(354.000000, 199.000000)">
+                <g id="Group-25" transform="translate(0.000000, 315.000000)">
+                    <g id="Group" transform="translate(0.000000, 60.000000)">
+                        <path d="M28,25.7142857 L28,28 L12,28 L12,25.7142857 L28,25.7142857 Z M16,18.8571429 L16,24.1904762 L13.6,24.1904762 L13.6,18.8571429 L16,18.8571429 Z M21.2,18.8571429 L21.2,24.1904762 L18.8,24.1904762 L18.8,18.8571429 L21.2,18.8571429 Z M26.4,18.8571429 L26.4,24.1904762 L24,24.1904762 L24,18.8571429 L26.4,18.8571429 Z M20,12 L28,15.8095238 L28,17.3333333 L12,17.3333333 L12,15.8095238 L20,12 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

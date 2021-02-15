@@ -68,4 +68,21 @@
       .text-center {
         text-align: center;
       }
+
+      .no-margin {
+        margin: 0;
+      }
+
+      form {
+        input, .ant-select-selector, button {
+          border: 0;
+          background-color: #F4F8FB;
+          &input:focus{
+            border-bottom: 3px solid;
+            border-image-source: linear-gradient(to right, #00D2FF, #7E51FF, #FA4A84);
+            border-image-slice: 1;
+            box-shadow: none;
+          }
+        }
+      }
 }

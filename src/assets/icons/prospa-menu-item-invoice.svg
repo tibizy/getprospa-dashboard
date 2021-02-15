@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 15</title>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DASHBOARD-LANDING" transform="translate(-50.000000, -513.000000)">
+            <g id="Group-12" transform="translate(50.000000, 404.000000)">
+                <g id="Group-15" transform="translate(0.000000, 109.000000)">
+                    <path d="M24,8.4 L24,24 L21.6,21.6 L19.2,24 L16.8,21.6 L14.4,24 L12,21.6 L9.6,24 L7.2,21.6 L4.8,24 L4.8,8.4 L24,8.4 Z M22,0 C23.1045695,1.75920346e-15 24,0.8954305 24,2 L24,2.4 L4.8,2.4 L4.8,0 L22,0 Z M4.8,4.8 L24,4.8 L24,6 L4.8,6 L4.8,4.8 Z" id="Combined-Shape" fill="#B5C1CD"></path>
+                    <path d="M4.8,0 L4.8,0 L4.8,0 L4.8,12 L0,12 L0,4.8 C-3.24649801e-16,2.1490332 2.1490332,4.86974701e-16 4.8,0 Z" id="Rectangle-Copy-5" fill="#8397AB"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
