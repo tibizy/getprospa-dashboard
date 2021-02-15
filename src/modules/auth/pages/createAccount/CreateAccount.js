@@ -132,7 +132,7 @@ class CreateAccount extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isPersonalInfoSubmitted: true
+      isPersonalInfoSubmitted: false
     };
   }
 

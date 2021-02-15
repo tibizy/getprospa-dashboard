@@ -28,16 +28,17 @@ function DashboardHome() {
     <Layout className="dashboard-home">
       <Layout.Content>
         <Space direction="vertical" size="large" style={{width: '100%'}}>
-          <Row justify="space-between" align="middle">
+          <Row justify="space-between" align="middle" gutter={[24, 24]}>
             <Col>
               <Typography.Title level={3} className="page-title no-margin">Welcome back, Katty</Typography.Title>
               <Typography.Text level={3} className="page-sub-title">Here's what has been happening in the last <a>7 days</a></Typography.Text>
             </Col>
-
-            <Button size="large" type="primary">Add a sub account</Button>
+            <Col>
+              <Button size="large" type="primary">Add a sub account</Button>
+            </Col>
           </Row>
 
-          <Row justify="space-between" gutter={24}>
+          <Row justify="space-between" gutter={[24, 24]}>
             <Col flex="1">
               <Card className="card-section">
                 <Space direction="vertical" size={36} style={{width: "100%"}}>
@@ -68,8 +69,8 @@ function DashboardHome() {
             </Col>
           </Row>
 
-          <Row justify="space-between" gutter={24}>
-            <Col flex="1.2">
+          <Row justify="space-between" gutter={[24, 24]}>
+            <Col xs={24} md={14}>
               <Card className="card-section">
                 <Space direction="vertical" size={25} style={{width: "100%"}}>
                   <Typography.Title level={5} className="section-title">June Summary</Typography.Title>
@@ -84,7 +85,7 @@ function DashboardHome() {
                 </Space>
               </Card>
             </Col>
-            <Col flex="1">
+            <Col xs={24} md={10}>
               <Card className="card-section">
                 <Space direction="vertical" size={56} style={{width: "100%"}}>
                   <Typography.Title level={5} className="section-title">Cash outflow</Typography.Title>
