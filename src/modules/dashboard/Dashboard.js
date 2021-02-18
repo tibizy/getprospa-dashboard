@@ -1,4 +1,6 @@
 import React from "react";
+import {withRouter} from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
 import { Layout, List, Menu, Avatar, Typography, Dropdown, Button, Divider, Row, Space, Col, Card, Statistic, Image } from "antd";
 import Icon, { DownOutlined, BellFilled, CreditCardOutlined } from '@ant-design/icons';
 import './Dashboard.less';
@@ -7,13 +9,10 @@ import { ReactComponent as ProspaMenuItemAccount } from '../../assets/icons/pros
 import { ReactComponent as ProspaMenuItemInvoice } from '../../assets/icons/prospa-menu-item-invoice.svg';
 import { ReactComponent as ProspaMenuItemTransfer } from '../../assets/icons/prospa-menu-item-transfer.svg';
 import { ReactComponent as ProspaMenuItemOther } from '../../assets/icons/prospa-menu-item-other.svg';
-import { ReactComponent as TransactionTransferIcon } from '../../assets/icons/prospa-transaction-transfer-icon.svg';
-import { ReactComponent as TransactionChargesIcon } from '../../assets/icons/prospa-transaction-charges-icon.svg';
-import DashboardChat from '../../assets/images/prospa-dashboard-chat.png';
 
-import { Home } from './pages';
+import { Home, IncomeAllocation } from './pages';
 
-function Dashboard() {
+function Dashboard(props) {
   const company_menu = (
     <Menu>
       <Menu.Item className="active">
@@ -115,11 +114,18 @@ function Dashboard() {
           
         </Layout.Header>
         <Layout.Content className="dashboard-page-content">
-          <Home />
+          <Switch>
+            <Route path={`${props.match.path}/income-allocation`}>
+              <IncomeAllocation />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </Layout.Content>
       </Layout>
     </Layout>
   );
 }
 
-export default Dashboard;
+export default withRouter(Dashboard);
